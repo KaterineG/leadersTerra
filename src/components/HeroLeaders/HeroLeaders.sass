@@ -1,0 +1,112 @@
+@font-face 
+  font-family: 'BebasNeue'
+  src: url('../../fonts/bebasneue/BebasNeue-Regular.ttf')
+  font-weight: normal
+  font-style: normal
+
+.container 
+  max-width: 1400px
+  padding: 0
+  margin: 0 auto
+.hero
+  text-align: center
+  padding-top: 351px
+  min-height: 772px
+  background: url('./assets/background.png')
+  background-size: cover
+  &__header 
+    position: relative
+    margin-bottom: 24px
+    font-family: 'BebasNeue'
+    font-style: normal
+    font-weight: 700
+    font-size: 160px
+    line-height: 80%
+    text-align: center
+    text-transform: uppercase
+    color: #ffef60
+    z-index: 2
+  &__header::after 
+    content: 'лидеры Терры'
+    position: absolute
+    top: 14px
+    left: 0
+    font-family: 'BebasNeue'
+    font-style: normal
+    font-weight: 700
+    font-size: 160px
+    line-height: 80%
+    text-align: center
+    text-transform: uppercase
+    color: #1e354c
+    filter: blur(5px)
+    z-index: -1
+  &__wrapper 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__button 
+    position: relative
+    width: 350px
+    height: 80px
+    text-align: center
+    justify-content: center
+    margin-bottom: 100px
+    display: flex
+    font-family: 'BebasNeue'
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 100%
+    align-items: center
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    color: #ffffff
+    background: #b965f3
+  &__button::after 
+    content: ''
+    position: absolute
+    width: 315px
+    height: 52.46px
+    left: 10px
+    top: 41px
+    background: #1e354c
+    filter: blur(10px)
+    z-index: -1
+  .hero__btn 
+    box-sizing: border-box
+    position: relative
+    width: 255px
+    height: 58.29px
+    background: url('./assets/btn.png')
+    border: none
+    font-family: 'BebasNeue'
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 100%
+    justify-content: center
+    display: flex
+    align-items: center
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #1e354c
+
+li:not(:last-child) > .hero__btn::after 
+  content: ''
+  position: absolute
+  top: 16px
+  right: -20px
+  height: 28.388652801513672px
+  width: 28.388652801513672px
+  background: url('./assets/plus.png')
+  border-radius: 0px
+  z-index: 2
+
+ul 
+  list-style: none
+  display: flex
+  gap: 10px
+  width: 100%

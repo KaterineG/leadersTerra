@@ -1,0 +1,113 @@
+@font-face 
+  font-family: Inter, sans-serif
+  src: url('../../fonts/Inter/Inter-Regular.ttf')
+  font-weight: 400
+
+@font-face 
+  font-family: Inter, sans-serif
+  src: url('../../fonts/Inter/Inter-Bold.ttf')
+  font-weight: 700
+
+.footer
+  max-width:1400px
+  padding:67px 88px 20px
+  margin:0 auto
+  background-color: #000
+     
+  &__logo
+    width: 91px
+    height: 26.76px
+    margin-bottom:17px
+    background-image: url("./assets/logo.svg")
+  &__wrapper
+    display: grid
+    position: relative
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 1fr
+    grid-column-gap: 130px
+    grid-row-gap: 0px
+    padding-bottom:11px
+  &__text
+    max-width: 287px
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 400
+    font-size: 10.5px
+    line-height: 147.6%
+    color: #FFFFFF
+  &__title
+    margin-bottom:23px
+    margin-top:0
+    font-family: 'Inter',sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 12.8333px
+    line-height: 147.6%
+    color: #FFFFFF
+  &__contacts>ul
+    display: grid
+    gap:10px
+  &__item
+    font-family: 'Inter',sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 10.5px
+    line-height: 13px
+    color: #FFFFFF
+  &__link
+    font-family: 'Inter',sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 10.5px
+    line-height: 13px
+    color: #FFFFFF !important
+    text-decoration: none
+    cursor: pointer
+  &__linklist
+    min-width: 226px
+    padding-top:42px
+  &__contacts
+    min-width: 259px
+  &__copyright>span
+    font-family: 'Inter',sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 10.5px
+    line-height: 13px
+    color: #FFFFFF
+  &__wrapper::after
+    content:''
+    position: absolute
+    width: 1295px
+    height: 0px
+    left: -42px
+    bottom: 0
+    border: 1.16667px solid #7B7B7B
+    background-color: #7B7B7B
+  &__copyright
+    padding-top:23px
+
+ul, li
+  padding:0
+  margin:0
+  list-style-type: none
+
+.mark
+  position: relative
+  padding-left: 28px
+.mark:after
+  content: ''
+  position: absolute
+  top:0
+  left:0
+  width: 12.83px
+  height: 12.83px
+  background-color: #D9D9D9
+  border-radius: 1.16667px
+.listgap
+  display: grid
+  gap:10px
+
+.linksgap
+  display: grid
+  gap:10px
