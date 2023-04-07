@@ -1,13 +1,15 @@
 import React from 'react';
 import HeroLeaders from '../../components/HeroLeaders/HeroLeaders';
+import About from '../../components/About/About';
 import Footer from '../../layout/Footer/footer';
 
 const LeadersPage = () => {
   return (
-    <div>
+    <>
       <HeroLeaders />
+      <About />
       <Footer />
-    </div>
+    </>
   );
 };
 

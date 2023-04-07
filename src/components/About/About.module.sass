@@ -1,0 +1,94 @@
+@font-face 
+  font-family: 'Bebas Neue', sans-serif
+  src: url('../../fonts/bebasneue/BebasNeue-Bold.ttf')
+  font-weight: 400
+@font-face 
+  font-family: 'Bebas Neue', sans-serif
+  src: url('../../fonts/bebasneue/BebasNeue-Regular.ttf')
+  font-weight: 700
+.about
+  background: url('./assets/back1.png')
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 1039px
+
+
+  &__header>span
+    font-family: 'BebasNeue', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 60px
+    line-height: 72px
+    text-transform: uppercase
+    color: #E5E9EF
+    text-shadow: 5px 5px 10px #1E354C
+  &__header
+    margin:0
+    padding-left:145px
+    padding-top: 17px
+    font-family: 'Bebas Neue', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 44px
+    line-height: 53px
+    text-transform: uppercase
+    color: #FFEF60
+    text-shadow: 5px 5px 10px #1E354C
+  &__item
+    display: flex
+    width: 569px
+    height: 395px
+    font-family: 'Bebas Neue', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 32px
+    line-height: 137.6%
+    justify-content: center
+    text-align: center
+    align-items: center
+    color: #151E27
+    background: url('./assets/block.png')
+    background-size: contain
+    background-repeat: no-repeat
+  &__item:nth-child(1)
+    transform: translate(79px,18px)
+  &__item:nth-child(2)
+    transform: translate(-34px,100px)
+  &__item:nth-child(3)
+    transform: translate(79px,-58px)
+  &__item:nth-child(4)
+    transform: translate(-34px,30px)
+  &__itemp
+    transform:translateX(-10px)
+  &__list
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-column-gap: 0
+    grid-row-gap: 10px
+    justify-content: center
+    max-width: 1200px
+    margin: 0 auto
+  &__btn
+    font-family: 'Bebas Neue', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 100%
+    display: flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    color: #1E354C
+    width: 356px
+    height: 93.46px
+    background: url('./assets/btnyellow.png')
+    border: none
+    cursor: pointer
+  &__action
+    display: flex
+    justify-content: center
+    padding-top: 20px
+

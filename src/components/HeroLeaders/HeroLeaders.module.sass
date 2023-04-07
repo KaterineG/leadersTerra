@@ -4,19 +4,19 @@
   font-weight: normal
   font-style: normal
 
-.container 
-  max-width: 1400px
-  padding: 0
-  margin: 0 auto
 .hero
+  position: relative
   text-align: center
-  padding-top: 351px
-  min-height: 772px
-  background: url('./assets/background.png')
-  background-size: cover
+  padding-top: 349px
+  min-height: 1147px
+  background: url('./assets/background.png'), linear-gradient(90deg, rgba(6,58,99,1) 0%, rgba(20,42,66,1) 100%, rgba(20,42,66,1) 100%)
+  background-size: contain
+
+    
   &__header 
     position: relative
-    margin-bottom: 24px
+    margin:0
+    margin-bottom: 27px
     font-family: 'BebasNeue'
     font-style: normal
     font-weight: 700
@@ -31,7 +31,7 @@
     position: absolute
     top: 14px
     left: 0
-    font-family: 'BebasNeue'
+    font-family: 'BebasNeue', sans-serif
     font-style: normal
     font-weight: 700
     font-size: 160px
@@ -52,7 +52,7 @@
     height: 80px
     text-align: center
     justify-content: center
-    margin-bottom: 100px
+    margin-bottom: 73px
     display: flex
     font-family: 'BebasNeue'
     font-style: normal
@@ -74,16 +74,17 @@
     background: #1e354c
     filter: blur(10px)
     z-index: -1
-  .hero__btn 
+  &__btn 
     box-sizing: border-box
     position: relative
-    width: 255px
-    height: 58.29px
+    width: 330px
+    height: 77px
+    padding:0
     background: url('./assets/btn.png')
     border: none
-    font-family: 'BebasNeue'
+    font-family: 'Bebas Neue', sans-serif
     font-style: normal
-    font-weight: 700
+    font-weight:400
     font-size: 18px
     line-height: 100%
     justify-content: center
@@ -93,20 +94,42 @@
     letter-spacing: 0.05em
     text-transform: uppercase
     color: #1e354c
+  &__info
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 1fr
+    grid-column-gap: 0px
+    grid-row-gap: 0px
+  &__listitem
+    display: grid
+    align-content: baseline
+    position: relative
+    min-height: 215px
+    min-width: 291px
+    font-family: 'Inter',sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    text-align: center
+    color: #FFFFFF
 
-li:not(:last-child) > .hero__btn::after 
-  content: ''
-  position: absolute
-  top: 16px
-  right: -20px
-  height: 28.388652801513672px
-  width: 28.388652801513672px
-  background: url('./assets/plus.png')
-  border-radius: 0px
-  z-index: 2
+    
+  &__listitem:not(last-child)::after
+    content: ''
+    position: absolute
+    width: 2px
+    height:213px
+    top: -53px
+    right: 0
+    background: url('./assets/separator.png')
+    background: contain
 
-ul 
-  list-style: none
-  display: flex
-  gap: 10px
-  width: 100%
+  &__listitem>span
+    font-size: 44px
+  &__action
+    padding-top:79px
+  &__list 
+    list-style: none
+    display: flex
+    gap: 10px
+    width: 100%
