@@ -1,7 +1,6 @@
 import styles from './HeroLeaders.module.sass';
 
 export const HeroLeaders = () => {
-  console.log(styles);
   return (
     <section className={styles.hero} id="Hero">
       <div className={styles.container}>
